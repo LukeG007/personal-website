@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, make_response
+from flask import Flask, render_template, request, make_response, redirect
 
 app = Flask(__name__)
 
@@ -12,6 +12,10 @@ def home():
         resp.set_cookie('theme', theme)
         return resp
     return render_template('home.html', theme=theme, title='About')
+
+@app.route('/robots.txt')
+def robots():
+    return redirect('/static/robots.txt')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=6743)
