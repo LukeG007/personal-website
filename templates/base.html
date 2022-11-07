@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Luke Gilsinger - {{ title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" id="theme_stylesheet" href="/static/css/themes/{{ theme }}.css">
+    </head>
+    <body>
+        {% block content %}
+
+        {% endblock %}
+        <button onclick="triggerDark()" class="trigger_dark_button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="trigger_dark_svg">
+                <path class="trigger_dark_path" d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/>
+            </svg>
+        </button>
+        <script>
+            theme = "{{ theme }}"
+        </script>
+        <script src="/static/js/themes.js"></script>
+    </body>
+</html>

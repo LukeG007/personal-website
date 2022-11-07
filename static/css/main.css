@@ -1,0 +1,100 @@
+:root {
+    --font: Arial, Helvetica, sans-serif;
+    --background-color: #FFFFFF;
+    --foreground-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+p {
+    font-family: var(--font);
+    color: var(--foreground-color);
+}
+
+small {
+    font-family: var(--font);
+    color: var(--foreground-color);
+}
+
+h1 {
+    font-family: var(--font);
+    color: var(--foreground-color);
+}
+
+h2 {
+    font-family: var(--font);
+    color: var(--foreground-color);
+}
+
+h3 {
+    font-family: var(--font);
+    color: var(--foreground-color);
+}
+
+h4 {
+    font-family: var(--font);
+    color: var(--foreground-color);
+}
+
+h5 {
+    font-family: var(--font);
+    color: var(--foreground-color);
+}
+
+.trigger_dark_button {
+    background-color: var(--background-color);
+    border: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.trigger_dark_svg {
+    width: 20px;
+    
+}
+
+.trigger_dark_path {
+    fill: var(--foreground-color);
+}
+
+@font-face {
+    font-family: terminal;
+    src: url(/static/fonts/terminal.ttf);
+}
+
+.terminal {
+    overflow: scroll;
+    height: 500px;
+    width: 70%;
+    outline: 1px solid var(--foreground-color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.termtext {
+    margin: 2px;
+    font-family: terminal;
+}
+
+.input-box {
+    text-align: center;
+}
+
+.enterbutton {
+    border: none;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    outline: 2px solid var(--foreground-color);
+}
+
+.input-cmd {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    width: 300px;
+}
